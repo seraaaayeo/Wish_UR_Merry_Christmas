@@ -25,6 +25,6 @@ def make_tree(tree_height=100, tree_width=50, quality=20, slope=1.5, leaf_height
     plt.show()
 
 
-if '__name__' == '__main__':
+if __name__ == '__main__':
     make_tree(tree_height=200, tree_width=100, quality=25, slope=1.7, leaf_height=0.85, trunk_width=0.1, orna_freq=1.2,
               bark_color='#663333', bg_color='#EEEEFF', leaf_color='#336633')
