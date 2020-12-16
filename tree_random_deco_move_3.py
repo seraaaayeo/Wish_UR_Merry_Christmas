@@ -59,14 +59,15 @@ def multi_threading(func, sec):
     print('Done!')
 
 def print_tree():
-    os.system('clear')
+    #os.system('clear') #linux
+    os.system('cls') #window
     tree = make_tree(30,30)
     print(tree)
 
 
 if __name__ == "__main__":
     #print_tree(make_tree(30,30))
-    t = threading.Thread(target=multi_threading, args=(print_tree, 1))
+    t = threading.Thread(target=multi_threading, args=(print_tree, 0.5))
     t.start()
 
     
